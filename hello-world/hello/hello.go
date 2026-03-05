@@ -2,6 +2,11 @@ package hello
 
 import "fmt"
 
+const engGreetingPrefix = "Hello,"
+
 func Hello(name string) string {
-	return fmt.Sprintf("Hello, %s!", name)
+	if name == "" {
+		return fmt.Sprintf("%s World!", engGreetingPrefix)
+	}
+	return fmt.Sprintf("%s %s!", engGreetingPrefix, name)
 }
