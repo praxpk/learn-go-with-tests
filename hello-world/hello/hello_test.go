@@ -1,10 +1,14 @@
 package hello
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestHell(t *testing.T) {
-	got := Hello()
-	want := "Hello, World!"
+	name := "Chris"
+	got := Hello(name)
+	want := fmt.Sprintf("Hello, %s!", name)
 	if got != want {
 		t.Errorf("got %s, want %s", got, want)
 	}
