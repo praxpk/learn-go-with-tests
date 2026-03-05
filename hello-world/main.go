@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"learn-go-with-tests/hello-world/hello"
+	"github.com/praxpk/learn-go-with-tests/hello-world/hello"
 )
 
 func main() {
